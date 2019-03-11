@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+    height: auto;
+    background-color: #444444;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.header a{
+    color: #CCCCCC;
+    height: 100%;
+    width: 20%;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+
+.aboutMe{
+    height: auto;
+    background-color:#0505e4;
+    padding: 10px 2%;
+}
+
+.aboutMe p{
+    text-align: justify;
+}
+
+#myPhoto{
+    float: right;
+    width: 300px;
+    height: auto;
+    margin-left: 20px;
+}
+
+
+
+.games{
+    height: auto;
+    background-color: #cc1111;
+    padding: 10px 2%;
+}
+
+.gamesHeader{
+    height: 4em;
+    text-align: center;
+    margin: 5px 10%;
+}
+
+.gamesContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    
+}
+
+.gamesContainer > *{
+    text-align: center;
+    border: 5px #444444 ;
+}
+
+
+.footer{
+    height: 2em;
+    background-color: #444444;
+    padding: 10px 2%;
+}
+
+.footer *{
+    text-align: center;
+    margin: 0;
+    
+
+}
