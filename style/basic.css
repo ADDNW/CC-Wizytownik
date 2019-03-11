@@ -4,12 +4,14 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+/*Header*/
 .header{
     height: auto;
     background-color: #444444;
     display: flex;
     justify-content: space-around;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .header a{
@@ -18,18 +20,24 @@ body{
     width: 20%;
     text-decoration: none;
     text-align: center;
+    min-width: 125px;
 
 }
 
 
+/* ABOUTME */
 .aboutMe{
     height: auto;
-    background-color:#0505e4;
+    background-color:#3535e9;
     padding: 10px 2%;
 }
 
 .aboutMe p{
     text-align: justify;
+}
+
+.aboutMe a{
+    color: #000;
 }
 
 #myPhoto{
@@ -40,10 +48,10 @@ body{
 }
 
 
-
+/* GAMES */
 .games{
     height: auto;
-    background-color: #cc1111;
+    background-color: #30eece;
     padding: 10px 2%;
 }
 
@@ -56,25 +64,77 @@ body{
 .gamesContainer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 50px;
-    
+    grid-column-gap: 50px; 
 }
 
-.gamesContainer > *{
+.game{
+    color: #fff;
     text-align: center;
-    border: 5px #444444 ;
+}
+
+.game strong{
+    color: red;
+    font-size: 22px;
 }
 
 
+.gameFoto{
+    width: 80%;
+    height: auto;
+    margin: 10% 0;
+    transition: transform 2s;
+}
+
+.gameFoto:hover{
+    transform: scale(1.25);
+}
+
+/* Game Info */
+.gameInfo{
+    height: 90%;
+    background-color: #3535e9;
+    padding: 5vh 20px;
+}
+
+.gameInfo strong h1{
+    color: #000;
+    font-size: 45px;
+    margin-top: 0.1vh;
+    text-align: center;
+    background: #00cc00;
+}
+
+.gameInfo strong h2{
+    color: #f00;
+    margin-top: 30vh;
+    font-size: 75px;
+    text-align: center;
+}
+
+.studentsLife{
+    background: url("../img/StudentsLife.png") no-repeat center center;
+    background-size: cover;
+}
+
+.medivalmagedon{
+    background: url("../img/Medivalmagedon.png") no-repeat center center;
+    background-size: cover;
+}
+
+.piratesLife{
+    background: url("../img/PiratesLife.png") no-repeat center center;
+    background-size: cover; 
+}
+
+/* FOOTER */
 .footer{
-    height: 2em;
+    height: 1.5em;
     background-color: #444444;
     padding: 10px 2%;
+    text-align: center;
 }
 
-.footer *{
-    text-align: center;
-    margin: 0;
+.footer em{
+    margin-top: 0.5em;
     
-
 }
